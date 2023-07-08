@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Bakery</title>
+  </head>
+  <body>
+    <div class="h-70vh relative overflow-hidden">
+      <img
+        src="../assets/images/phoneBanner.jpg"
+        alt=""
+        srcset=""
+        class="absolute bg-cover bg-no-repeat min-h-full"
+      />
+      <div
+        class="relative flex flex-col justify-between bg-gradient-to-t from-rose-400 from-20% via-transparent h-full"
+      >
+        <nav class="flex justify-self-start justify-center gap-x-3">
+          <div class="flex flex-col justify-center mt-3">
+            <svg
+              class="m-auto fill-current text-rose-300"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+            >
+              <g clip-path="url(#a)">
+                <path
+                  d="M16.526 31.734c-4.14 0-8.033-1.612-10.96-4.54a15.398 15.398 0 0 1-4.54-10.96c0-4.14 1.612-8.032 4.54-10.96a15.399 15.399 0 0 1 10.96-4.54c3.151 0 6.185.94 8.772 2.72a15.489 15.489 0 0 1 5.608 6.987c.16.4.033.858-.312 1.117a2.389 2.389 0 0 0-.684 3.014.951.951 0 0 1-1.173 1.373 4.837 4.837 0 0 0-6.648 4.478c0 1.272.49 2.474 1.383 3.383a.952.952 0 0 1-.224 1.5 3.038 3.038 0 0 0-1.166 4.205.952.952 0 0 1-.51 1.382c-1.621.558-3.32.841-5.046.841Z"
+                />
+                <path
+                  fill="#57263C"
+                  d="M16 10.801a3.121 3.121 0 0 1-3.118-3.117A3.121 3.121 0 0 1 16 4.566a3.121 3.121 0 0 1 3.118 3.118A3.121 3.121 0 0 1 16 10.8ZM9.18 18.054a3.121 3.121 0 0 1-3.117-3.117 3.121 3.121 0 0 1 3.118-3.118 3.121 3.121 0 0 1 3.117 3.118 3.121 3.121 0 0 1-3.117 3.117ZM14.719 26.843a3.121 3.121 0 0 1-3.118-3.118 3.121 3.121 0 0 1 3.118-3.117 3.121 3.121 0 0 1 3.118 3.117 3.121 3.121 0 0 1-3.118 3.118Z"
+                />
+                <path
+                  fill="#000"
+                  d="M30.905 10.441a15.489 15.489 0 0 0-5.607-6.987 15.413 15.413 0 0 0-8.772-2.72v31a15.47 15.47 0 0 0 5.046-.841.95.95 0 0 0 .51-1.382 3.038 3.038 0 0 1 1.166-4.204.95.95 0 0 0 .223-1.502 4.803 4.803 0 0 1-1.383-3.382 4.837 4.837 0 0 1 6.648-4.478.951.951 0 0 0 1.173-1.373 2.387 2.387 0 0 1 .685-3.014.951.951 0 0 0 .311-1.117Z"
+                  opacity=".15"
+                />
+              </g>
+              <defs>
+                <clipPath id="a">
+                  <path fill="#fff" d="M.5.734h31v31H.5z" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="text-center text-white font-bold sm:text-sm"
+              >Contactanos</span
+            >
+          </div>
+        </nav>
+        <div class="flex flex-col items-center mb-5">
+          <h1 class="flex flex-row items-center gap-1">
+            <svg
+              class="block"
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              fill="none"
+            >
+              <path
+                fill="#fff"
+                d="M7.171.785C6.88.372 6.391.14 5.96.4c-.386.231-.696.439-.887.623-.178.171-.256.313-.266.442-.01.13.04.275.224.477a.118.118 0 0 0 .105.037 13.61 13.61 0 0 1 2.305-.137c1.05.021 2.048.142 2.915.337.106.024.19-.093.12-.177-.221-.263-.452-.43-1.15-.396l-.019.001h-.019c-1.214-.074-1.82-.404-2.116-.822Zm.136 1.566c-1.253-.005-2.342.15-3.09.396-.398.132-.697.292-.873.453-.175.16-.223.306-.191.443.069.295.463.32.756.241.849-.227 1.83-.402 2.898-.504 1.838-.175 3.587-.102 4.96.167.105.02.208.042.308.065.195.045.306-.122.14-.234-.254-.17-.631-.342-1.095-.492-.93-.298-2.201-.505-3.56-.532l-.253-.003Zm1.624 1.43a20.02 20.02 0 0 0-1.944.092c-1.775.169-3.298.55-4.303 1.016-.503.232-.875.487-1.086.73-.034.04-.064.078-.09.115-.14.206.089.378.33.315C3.308 5.666 5.3 5.437 7.5 5.437c2.2 0 4.19.23 5.663.612.089.024.185.008.258-.048.112-.086.205-.172.279-.257.211-.244.261-.46.19-.658-.073-.197-.273-.39-.642-.578-.37-.188-.896-.356-1.529-.48-.791-.156-1.749-.244-2.788-.246ZM7.5 5.894c-2.13 0-4.056.227-5.42.582-.683.177-1.223.388-1.574.604-.352.216-.506.423-.506.624 0 .202.154.41.506.625a.018.018 0 0 0 .016.001l1.373-.58a2 2 0 0 1 1.565.004l.823.352a2 2 0 0 0 1.557.007l.877-.366a2 2 0 0 1 1.567.011l.792.344a2 2 0 0 0 1.558.015l.919-.379a2 2 0 0 1 1.54.007l1.385.585a.018.018 0 0 0 .016 0c.352-.217.506-.424.506-.626 0-.201-.154-.408-.506-.624-.351-.216-.891-.427-1.573-.604-1.365-.355-3.292-.582-5.421-.582Zm5.418 2.347a1.554 1.554 0 0 0-1.197-.005l-.476.196a2 2 0 0 0-1.217 1.557l-.378 2.558a.3.3 0 0 1-.595-.088l.314-2.119a1.916 1.916 0 0 0-1.135-2.03 1.877 1.877 0 0 0-2.608 1.995l.319 2.154a.3.3 0 0 1-.595.088l-.375-2.537a2 2 0 0 0-1.191-1.546l-.504-.216a1.543 1.543 0 0 0-2.025 2.029l1.113 2.588a2 2 0 0 0 1.837 1.21h6.59a2 2 0 0 0 1.837-1.21l1.109-2.578a1.554 1.554 0 0 0-.823-2.046Z"
+              />
+            </svg>
+            <span class="text-white text-4xl font-bold">Modeka</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              fill="none"
+            >
+              <path
+                fill="#fff"
+                d="M7.171.785C6.88.372 6.391.14 5.96.4c-.386.231-.696.439-.887.623-.178.171-.256.313-.266.442-.01.13.04.275.224.477a.118.118 0 0 0 .105.037 13.61 13.61 0 0 1 2.305-.137c1.05.021 2.048.142 2.915.337.106.024.19-.093.12-.177-.221-.263-.452-.43-1.15-.396l-.019.001h-.019c-1.214-.074-1.82-.404-2.116-.822Zm.136 1.566c-1.253-.005-2.342.15-3.09.396-.398.132-.697.292-.873.453-.175.16-.223.306-.191.443.069.295.463.32.756.241.849-.227 1.83-.402 2.898-.504 1.838-.175 3.587-.102 4.96.167.105.02.208.042.308.065.195.045.306-.122.14-.234-.254-.17-.631-.342-1.095-.492-.93-.298-2.201-.505-3.56-.532l-.253-.003Zm1.624 1.43a20.02 20.02 0 0 0-1.944.092c-1.775.169-3.298.55-4.303 1.016-.503.232-.875.487-1.086.73-.034.04-.064.078-.09.115-.14.206.089.378.33.315C3.308 5.666 5.3 5.437 7.5 5.437c2.2 0 4.19.23 5.663.612.089.024.185.008.258-.048.112-.086.205-.172.279-.257.211-.244.261-.46.19-.658-.073-.197-.273-.39-.642-.578-.37-.188-.896-.356-1.529-.48-.791-.156-1.749-.244-2.788-.246ZM7.5 5.894c-2.13 0-4.056.227-5.42.582-.683.177-1.223.388-1.574.604-.352.216-.506.423-.506.624 0 .202.154.41.506.625a.018.018 0 0 0 .016.001l1.373-.58a2 2 0 0 1 1.565.004l.823.352a2 2 0 0 0 1.557.007l.877-.366a2 2 0 0 1 1.567.011l.792.344a2 2 0 0 0 1.558.015l.919-.379a2 2 0 0 1 1.54.007l1.385.585a.018.018 0 0 0 .016 0c.352-.217.506-.424.506-.626 0-.201-.154-.408-.506-.624-.351-.216-.891-.427-1.573-.604-1.365-.355-3.292-.582-5.421-.582Zm5.418 2.347a1.554 1.554 0 0 0-1.197-.005l-.476.196a2 2 0 0 0-1.217 1.557l-.378 2.558a.3.3 0 0 1-.595-.088l.314-2.119a1.916 1.916 0 0 0-1.135-2.03 1.877 1.877 0 0 0-2.608 1.995l.319 2.154a.3.3 0 0 1-.595.088l-.375-2.537a2 2 0 0 0-1.191-1.546l-.504-.216a1.543 1.543 0 0 0-2.025 2.029l1.113 2.588a2 2 0 0 0 1.837 1.21h6.59a2 2 0 0 0 1.837-1.21l1.109-2.578a1.554 1.554 0 0 0-.823-2.046Z"
+              />
+            </svg>
+          </h1>
+          <span class="text-xl font-bold text-pink-950 text-"
+            >Pasteleria y reposteria</span
+          >
+        </div>
+      </div>
+    </div>
+    <svg
+      class="-mt-2"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1440 320"
+    >
+      <path
+        fill="#fb7185"
+        fill-opacity="1"
+        d="M0,96L120,133.3C240,171,480,245,720,240C960,235,1200,149,1320,106.7L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
+      ></path>
+    </svg>
+    <div class="w-full pt-5 bg-white">
+      <h3 class="mr-5 text-3xl text-right text-rose-950 font-bold my-3">
+        ¿Quienes somos?
+      </h3>
+      <p class="my-8 w-11/12 text-rose-950 text-base font-semibold text-right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam
+        debitis rem voluptas harum ullam iure qui natus, magnam perspiciatis
+        dolorum velit totam saepe modi quam, beatae non, nihil sunt.
+      </p>
+    </div>
+    <img
+      class="w-3/6 max-w-5xl"
+      src="../assets/images/profilex2.png"
+      alt="profile"
+    />
+
+    <!-- Sección de productos -->
+    <div class="w-full pt-5 bg-cyan-300">
+      <h3 class="text-3xl text-center text-rose-950 font-bold my-3">
+        Nuestros productos
+      </h3>
+      <div class="flex flex-col items-center pt-5">
+        <!-- Item cakes -->
+        <div
+          class="grid grid-rows-4 w-60 h-60 mt-16 rounded-full bg-gradient-to-tr from-rose-950 from-55% via-transparent"
+        >
+          <img
+            class="row-start-1 ml-10 -mt-16"
+            src="../assets/images/cake-1.png"
+            alt="cake-1"
+            srcset=""
+          />
+          <div class="flex flex-col row-start-3 row-span-2 items-center">
+            <h4 class="w-2/4 text-center text-cyan-300 font-bold text-lg">
+              other
+            </h4>
+            <p class="text-cyan-300 w-5/6 text-center">otro texto</p>
+          </div>
+        </div>
+
+        <div
+          class="grid grid-rows-4 w-60 h-60 mt-16 rounded-full bg-gradient-to-tr from-rose-400 from-55% via-transparent"
+        >
+          <img
+            class="row-start-1 ml-10 -mt-16"
+            src="../assets/images/cake-2.png"
+            alt="cake-1"
+            srcset=""
+          />
+          <div class="flex flex-col row-start-3 row-span-2 items-center">
+            <h4 class="w-2/4 text-center text-rose-950 font-bold text-lg">
+              other
+            </h4>
+            <p class="text-rose-950 w-5/6 text-center">otro texto</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#67e8f9"
+        fill-opacity="1"
+        d="M0,256L20,266.7C40,277,80,299,120,282.7C160,267,200,213,240,170.7C280,128,320,96,360,101.3C400,107,440,149,480,144C520,139,560,85,600,80C640,75,680,117,720,165.3C760,213,800,267,840,250.7C880,235,920,149,960,96C1000,43,1040,21,1080,58.7C1120,96,1160,192,1200,234.7C1240,277,1280,267,1320,224C1360,181,1400,107,1420,69.3L1440,32L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"
+      ></path>
+    </svg>
+    <div class="w-full pt-5 bg-white mb-10">
+      <h3 class="ml-5 text-3xl text-rose-950 font-bold mt-3 mb-11 text-left">
+        Otros servicios
+      </h3>
+      <div class="flex flex-col items-center gap-14">
+        <!-- item -->
+        <div class="w-72 h-52 relative bg-cyan-300 rotate-12 rounded-lg">
+          <div class="w-72 h-52 absolute -rotate-12 rounded-lg overflow-hidden">
+            <div class="relative w-full h-full">
+              <img
+                src="../assets/images/service-1.jpg"
+                alt="Servicio1"
+                class="absolute bg-cover bg-no-repeat min-h-full"
+              />
+              <div
+                class="h-full w-full flex flex-col justify-end relative bg-gradient-to-t from-rose-950 from-30% via-transparent"
+              >
+                <div class="flex flex-col items-center pb-5">
+                  <h4 class="w-2/4 text-center text-white font-bold text-lg">
+                    other
+                  </h4>
+                  <p class="text-white w-5/6 text-center">otro texto</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- item -->
+        <div class="w-72 h-52 relative bg-cyan-300 rotate-12 rounded-lg">
+          <div class="w-72 h-52 absolute -rotate-12 rounded-lg overflow-hidden">
+            <div class="relative w-full h-full">
+              <img
+                src="../assets/images/service-1.jpg"
+                alt="Servicio1"
+                class="absolute bg-cover bg-no-repeat min-h-full"
+              />
+              <div
+                class="h-full w-full flex flex-col justify-end relative bg-gradient-to-t from-rose-950 from-30% via-transparent"
+              >
+                <div class="flex flex-col items-center pb-5">
+                  <h4 class="w-2/4 text-center text-white font-bold text-lg">
+                    other
+                  </h4>
+                  <p class="text-white w-5/6 text-center">otro texto</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      version="1.1"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:svgjs="http://svgjs.dev/svgjs"
+      viewBox="0 0 325 100"
+    >
+      <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="ssspill-grad">
+          <stop stop-color="#ffff" stop-opacity="1" offset="45%"></stop>
+          <stop stop-color="#ffff" stop-opacity="1" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+      <rect width="100%" height="100%" fill="#fb7185"></rect>
+      <g fill="url(#ssspill-grad)">
+        <rect width="100%" height="40" fill="#ffff"></rect>
+
+        <rect x="0" width="7.69%" height="66.96482373852656" rx="15"></rect>
+        <rect x="50" width="7.69%" height="67.1070486730636" rx="15"></rect>
+        <rect x="100" width="7.69%" height="92.51245895292632" rx="15"></rect>
+        <rect x="150" width="7.69%" height="97.40123834795658" rx="15"></rect>
+        <rect x="200" width="7.69%" height="81.70268215209515" rx="15"></rect>
+        <rect x="250" width="7.69%" height="58.62036685187448" rx="15"></rect>
+        <rect x="300" width="7.69%" height="85.76790873595476" rx="15"></rect>
+      </g>
+      <g fill="#fb7185">
+        <rect
+          x="25"
+          y="12.874292926907378"
+          width="7.69%"
+          height="60"
+          rx="15"
+        ></rect>
+        <rect
+          x="75"
+          y="20.52768320066429"
+          width="7.69%"
+          height="60"
+          rx="15"
+        ></rect>
+        <rect
+          x="125"
+          y="24.872929937835703"
+          width="7.69%"
+          height="60"
+          rx="15"
+        ></rect>
+        <rect
+          x="175"
+          y="14.021634948913894"
+          width="7.69%"
+          height="60"
+          rx="15"
+        ></rect>
+        <rect
+          x="225"
+          y="6.9639128365814775"
+          width="7.69%"
+          height="60"
+          rx="15"
+        ></rect>
+        <rect
+          x="275"
+          y="26.061791631080027"
+          width="7.69%"
+          height="60"
+          rx="15"
+        ></rect>
+      </g>
+    </svg>
+    <div class="w-full py-5 bg-rose-400  pb-5">
+      <h3 class="ml-5 text-3xl text-rose-950 font-bold mt-3 mb-11 text-left">
+        Contactanos
+      </h3>
+      <form
+        action=""
+        class="w-11/12 m-auto bg-cyan-300 px-3 pb-5 pt-2 rounded-xl "
+      >
+        <div class="flex flex-col m-auto items-center w-10/12 my-4">
+          <label
+            for="name"
+            class="block w-full text-left text-base font-semibold text-rose-950"
+            >Nombre</label
+          >
+          <input
+            type="text"
+            class="w-full border-b-2 bg-cyan-300 border-rose-950 focus:outline-none focus:border-b-2"
+          />
+        </div>
+        <div class="flex flex-col m-auto items-center w-10/12 my-4">
+          <label
+            for="name"
+            class="block w-full text-left text-base font-semibold text-rose-950"
+            >Correo electronico</label
+          >
+          <input
+            type="text"
+            class="w-full border-b-2 bg-cyan-300 border-rose-950 focus:outline-none focus:border-b-2"
+          />
+        </div>
+
+        <div class="flex flex-col m-auto items-center w-10/12 my-4">
+          <label
+            for="name"
+            class="block w-full text-left text-base font-semibold text-rose-950"
+            >Curso interesado</label
+          >
+          <select
+            class="w-full border-b-2 bg-cyan-300 border-rose-950 focus:outline-none focus:border-b-2"
+          >
+            >
+          </select>
+        </div>
+
+        <div class="flex flex-col m-auto items-center w-10/12 my-4">
+          <label
+            for="name"
+            class="block w-full text-left text-base font-semibold text-rose-950"
+            >Comentarios</label
+          >
+          <textarea
+            class="w-full border-b-2 p-2 bg-rose-950  bg-opacity-20 rounded-t-lg border-rose-950 focus:outline-none focus:border-b-2"
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+          ></textarea>
+
+        </div>
+        <div class="w-full flex justify center">
+
+          <button class=" rounded-2xl bg-rose-950 text-cyan-300 text-xl py-2 px-5 m-auto"> Submit </button>
+        </div>
+      </form>
+    </div>
+    <div class="w-full  bg-rose-950  pb-8">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#fb7185" fill-opacity="1" d="M0,224L120,186.7C240,149,480,75,720,85.3C960,96,1200,192,1320,240L1440,288L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+      </svg>
+      <div class="flex flex-col items-center text-rose-300 ">
+        <h4 class="text-base  font-bold">Nos puedes encontrar en</h4>
+        <span class="block text-center text-sm font-medium text">Email: <span class="font-light">lorem@sdfs.com</span></span>
+        <span class="block text-center text-sm font-medium text">Telefono: <span class="font-light">318823222</span></span>
+        <span class="block text-center text-sm font-medium text">Calle 123 # 23 - 23 Bogotá - Colombia</span>
+        <h4 class="text-base  font-bold">Nuestras redes</h4>
+        <div class="flex text-rose-400">
+          <svg class="mx-1 fill-current"  xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
+          <svg class="mx-1 fill-current" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+          <svg class="mx-1 fill-current" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+        </div>
+        <h4 class="text-sm mt-5 text-white  font-semibold">Diseñado por NaroTech</h4>
+      </div>
+
+    </div>
+  </body>
+</html>
