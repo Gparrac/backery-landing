@@ -7,7 +7,8 @@ module.exports = {
           'primary' : '#F87984'
         },
         height:{
-          '70vh': '70vh'
+          '70vh': '70vh',
+          '60vh': '60vh'
         }
       },
     },

@@ -3,23 +3,33 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../assets/icons/favicon.ico" type="image/x-icon">
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="/dist/output.css" rel="stylesheet" />
     <title>Bakery</title>
   </head>
   <body>
-    <div class="h-70vh relative overflow-hidden">
+    <section class="h-70vh relative overflow-hidden">
       <img
         src="../assets/images/phoneBanner.jpg"
         alt=""
         srcset=""
-        class="absolute bg-cover bg-no-repeat min-h-full"
+        class="absolute bg-cover bg-no-repeat min-h-full lg:hidden"
       />
+      <img
+      src="../assets/images/DesktopBanner.jpg"
+      alt=""
+      srcset=""
+      class=" hidden absolute bg-cover bg-no-repeat min-h-full lg:block"
+    />
       <div
         class="relative flex flex-col justify-between bg-gradient-to-t from-rose-400 from-20% via-transparent h-full"
       >
-        <nav class="flex justify-self-start justify-center gap-x-3">
-          <div class="flex flex-col justify-center mt-3">
+        <nav class="flex justify-self-start justify-center lg:gap-x-10 gap-x-3">
+          <!-- item nav -->
+          
+          <a class="flex flex-col justify-center mt-3" href="#contact">
             <svg
               class="m-auto fill-current text-rose-300"
               xmlns="http://www.w3.org/2000/svg"
@@ -46,15 +56,45 @@
                 </clipPath>
               </defs>
             </svg>
-            <span class="text-center text-white font-bold sm:text-sm"
+            <span  class="text-center text-white font-bold text-sm md:text-base"
               >Contactanos</span
             >
-          </div>
+          </a>
+          <a class="flex flex-col justify-center mt-3" href="#products">
+            <svg class="m-auto fill-current text-rose-400" width="32" height="32" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17.9813 3.32163C17.8809 1.96605 16.7452 0.893585 15.3626 0.893585C14.089 0.893585 13.0246 1.80355 12.7861 3.00651L0.5 7.17886V18.2784H20.5V7.64612C20.5 5.7873 19.6311 4.29956 17.9813 3.32163ZM12.8739 4.35417C13.2247 5.39108 14.2073 6.13995 15.3626 6.13995C16.3845 6.13995 17.2714 5.55374 17.7054 4.70069C18.5138 5.29245 18.9959 6.06003 19.1452 6.99397H5.10074L12.8739 4.35417ZM19.1956 13.8327C18.9069 13.7967 18.6969 13.7373 18.4679 13.6723C18.0619 13.5571 17.6017 13.4266 16.732 13.4266C15.8623 13.4266 15.4021 13.5571 14.9961 13.6723C14.625 13.7776 14.3045 13.8685 13.6163 13.8685C12.928 13.8685 12.6075 13.7776 12.2363 13.6723C11.8303 13.5571 11.3701 13.4266 10.5004 13.4266C9.63066 13.4266 9.17047 13.5571 8.76441 13.6723C8.39324 13.7776 8.07266 13.8685 7.38441 13.8685C6.69605 13.8685 6.37551 13.7775 6.00434 13.6723C5.59828 13.5571 5.13805 13.4265 4.26828 13.4265C3.39855 13.4265 2.93832 13.5571 2.53223 13.6723C2.30313 13.7373 2.09309 13.7967 1.80422 13.8327V11.8174C2.27934 11.7726 2.59813 11.6827 2.88824 11.6004C3.25941 11.4951 3.58 11.4042 4.26828 11.4042C4.95656 11.4042 5.27715 11.4951 5.64832 11.6004C6.05438 11.7156 6.51461 11.8462 7.38438 11.8462C8.25406 11.8462 8.7143 11.7156 9.12035 11.6004C9.49152 11.4951 9.81203 11.4042 10.5003 11.4042C11.1886 11.4042 11.5091 11.4951 11.8803 11.6004C12.2863 11.7156 12.7465 11.8462 13.6162 11.8462C14.4859 11.8462 14.9461 11.7156 15.3521 11.6004C15.7232 11.4951 16.0437 11.4042 16.732 11.4042C17.4202 11.4042 17.7407 11.4951 18.1119 11.6004C18.402 11.6827 18.7206 11.7726 19.1955 11.8174L19.1956 13.8327Z" fill="#F498C2"/>
+              <ellipse cx="14.7795" cy="3.38823" rx="2.66667" ry="2.66667" fill="#57263C"/>
+              </svg>
+            <span  class="text-center text-white font-bold text-sm md:text-base"
+              >Productos</span
+            >
+          </a>    
+          <a class="flex flex-col justify-center mt-3" href="#services">
+            <svg class="m-auto fill-current text-rose-400" width="32" height="32" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_36_135)">
+              <path d="M16.6818 10.329V10.7633C16.6818 11.235 16.2991 11.6174 15.8271 11.6174H15.6145L13.854 20.1581H6.3029L4.54189 11.6144C4.09725 11.5843 3.74561 11.2153 3.74561 10.7633V10.3291H16.6818V10.329Z" fill="#F498C2"/>
+              <path d="M14.56 16.7326L13.8539 20.1581H6.30279L4.54178 11.6144C4.24756 11.5945 3.99478 11.4257 3.85693 11.1831H7.55232C8.66435 14.3217 11.3657 16.5765 14.56 16.7326Z" fill="#F498C2"/>
+              <path d="M16.8377 8.64584C16.8377 9.03912 16.7835 9.42001 16.6819 9.78158V10.7633C16.6819 11.235 16.2992 11.6174 15.8272 11.6174H12.9915V13.112C12.9915 13.4657 12.7046 13.7525 12.3505 13.7525C11.9965 13.7525 11.7095 13.4657 11.7095 13.112V11.6174H4.60035C4.12828 11.6174 3.74566 11.235 3.74566 10.7633V9.78158C3.64402 9.42009 3.58984 9.0392 3.58984 8.64584C3.58984 6.66311 4.96777 4.99725 6.83249 4.52573C7.55308 3.53467 8.69483 2.8612 10.0001 2.7585V2.7455C10.0263 2.74503 10.0524 2.74432 10.0787 2.74432C10.1239 2.74432 10.1689 2.74503 10.2138 2.74639C10.2586 2.74503 10.3037 2.74432 10.3488 2.74432C10.3751 2.74432 10.4012 2.74503 10.4274 2.7455V2.7585C11.7328 2.8612 12.8745 3.53467 13.5951 4.52573C15.4597 4.99725 16.8377 6.66311 16.8377 8.64584Z" fill="#57263C"/>
+              <path d="M16.8375 8.64585C16.8375 9.03913 16.7833 9.42003 16.6817 9.78159V10.7633C16.6817 11.235 16.2991 11.6174 15.827 11.6174H12.9914V13.112C12.9914 13.4657 12.7044 13.7525 12.3504 13.7525C11.9964 13.7525 11.7094 13.4657 11.7094 13.112V11.6174H4.60021C4.12814 11.6174 3.74553 11.235 3.74553 10.7633V9.78159C3.74143 9.76694 3.73783 9.75202 3.73389 9.73729C4.30834 9.84991 4.90326 9.90921 5.51279 9.90921C9.24946 9.90921 12.4391 7.68523 13.6983 4.55414C15.5101 5.06031 16.8375 6.70003 16.8375 8.64585Z" fill="#F498C2"/>
+              <path d="M5.7597 3.93344C7.19423 3.93344 8.35693 5.07817 8.35693 6.49027C8.35693 7.90238 7.19419 9.04702 5.7597 9.04702C4.32529 9.04702 3.1626 7.90234 3.1626 6.49027C3.16264 5.07817 4.32533 3.93344 5.7597 3.93344Z" fill="#57263C"/>
+              <path d="M6.58122 6.10967C6.58122 6.81721 6.0072 7.39077 5.29916 7.39077C4.59107 7.39077 4.01709 6.81717 4.01709 6.10967C4.01709 5.40218 4.59107 4.82858 5.29916 4.82858C6.00724 4.82858 6.58122 5.40218 6.58122 6.10967Z" fill="#57263C"/>
+              <path d="M13.7975 4.22598C13.0126 3.2043 11.8395 2.55391 10.5494 2.42614C10.5131 2.41231 10.474 2.40438 10.4331 2.40368L10.4131 2.40329C10.3465 2.40192 10.2798 2.4025 10.2134 2.40434C10.1471 2.4025 10.0803 2.40192 10.0137 2.40329L9.99377 2.40368C9.95284 2.40442 9.91369 2.41231 9.87748 2.42614C8.75628 2.53719 7.72378 3.04321 6.95737 3.8443C6.59116 3.68238 6.18589 3.59153 5.75925 3.59153C5.53718 3.59153 5.32109 3.61672 5.113 3.66301L4.26047 0.745945C4.20754 0.564891 4.01773 0.460868 3.83644 0.513797C3.65519 0.566688 3.55113 0.756414 3.6041 0.937507L4.4664 3.88785C3.49238 4.36047 2.82031 5.34922 2.82031 6.49019C2.82031 7.06581 2.99203 7.60234 3.28656 8.05386C3.26109 8.24816 3.24766 8.44573 3.24766 8.64581C3.24766 9.04683 3.30008 9.44417 3.40348 9.82772V10.329V10.7633C3.40348 10.7936 3.40496 10.8236 3.40723 10.8533C3.40762 10.8586 3.40797 10.8638 3.40844 10.869C3.41105 10.8988 3.41473 10.9282 3.41945 10.9573C3.4198 10.9595 3.42027 10.9616 3.42062 10.9638C3.49683 11.4129 3.82426 11.7776 4.253 11.9078L5.96784 20.2271C6.00058 20.3859 6.14046 20.5 6.30269 20.5H13.8537C14.016 20.5 14.1558 20.386 14.1886 20.2271L15.8933 11.9574C15.9059 11.9568 15.9185 11.9555 15.9311 11.9544C15.9374 11.9539 15.9439 11.9536 15.9502 11.9529C15.9669 11.9512 15.9834 11.949 15.9999 11.9466C16.0029 11.9462 16.0061 11.9458 16.0091 11.9454C16.0286 11.9424 16.048 11.9389 16.0672 11.935C16.0716 11.9341 16.076 11.9329 16.0805 11.9319C16.095 11.9287 16.1096 11.9255 16.124 11.9218C16.1309 11.9201 16.1377 11.918 16.1445 11.9161C16.1563 11.9128 16.1682 11.9096 16.1799 11.906C16.1874 11.9037 16.1949 11.901 16.2023 11.8985C16.2131 11.8949 16.2239 11.8915 16.2345 11.8876C16.2424 11.8848 16.2502 11.8816 16.258 11.8785C16.268 11.8746 16.2781 11.8708 16.288 11.8667C16.296 11.8633 16.3039 11.8597 16.3119 11.8562C16.3214 11.8519 16.3309 11.8478 16.3402 11.8433C16.3481 11.8396 16.3559 11.8355 16.3638 11.8315C16.3729 11.8269 16.382 11.8224 16.3911 11.8175C16.3988 11.8134 16.4065 11.809 16.4141 11.8046C16.4229 11.7996 16.4318 11.7947 16.4405 11.7894C16.4482 11.7849 16.4557 11.78 16.4632 11.7753C16.4716 11.77 16.48 11.7647 16.4883 11.7592C16.4959 11.7542 16.5033 11.7489 16.5107 11.7438C16.5188 11.7381 16.5268 11.7325 16.5347 11.7267C16.542 11.7214 16.5492 11.7158 16.5564 11.7103C16.5641 11.7043 16.5719 11.6983 16.5795 11.6921C16.5865 11.6864 16.5935 11.6806 16.6004 11.6747C16.6078 11.6683 16.6152 11.662 16.6225 11.6555C16.6293 11.6495 16.636 11.6433 16.6426 11.6371C16.6498 11.6304 16.6568 11.6237 16.6638 11.6169C16.6703 11.6106 16.6767 11.6041 16.6831 11.5976C16.6899 11.5906 16.6966 11.5836 16.7032 11.5765C16.7094 11.5698 16.7155 11.563 16.7216 11.5562C16.7281 11.549 16.7344 11.5417 16.7407 11.5343C16.7466 11.5273 16.7524 11.5202 16.7582 11.5131C16.7643 11.5055 16.7703 11.498 16.7762 11.4903C16.7818 11.483 16.7873 11.4757 16.7927 11.4683C16.7984 11.4605 16.8041 11.4524 16.8096 11.4445C16.8148 11.437 16.82 11.4295 16.825 11.4219C16.8304 11.4137 16.8357 11.4055 16.8409 11.3971C16.8458 11.3894 16.8506 11.3817 16.8552 11.3739C16.8603 11.3654 16.8652 11.3568 16.87 11.3482C16.8745 11.3403 16.879 11.3324 16.8832 11.3244C16.8879 11.3156 16.8924 11.3068 16.8968 11.298C16.9009 11.2898 16.905 11.2817 16.9089 11.2735C16.9132 11.2644 16.9172 11.2553 16.9213 11.2462C16.9249 11.2379 16.9287 11.2296 16.9322 11.2212C16.9361 11.2119 16.9397 11.2025 16.9433 11.1931C16.9465 11.1846 16.9499 11.1762 16.953 11.1677C16.9565 11.1581 16.9596 11.1483 16.9629 11.1386C16.9657 11.1301 16.9686 11.1216 16.9712 11.113C16.9743 11.103 16.977 11.0928 16.9799 11.0827C16.9822 11.0742 16.9847 11.0657 16.9868 11.0572C16.9895 11.0467 16.9918 11.0361 16.9941 11.0255C16.996 11.0171 16.9981 11.0087 16.9998 11.0002C17.002 10.9893 17.0038 10.9783 17.0057 10.9672C17.0071 10.9589 17.0088 10.9507 17.01 10.9422C17.0118 10.9307 17.0131 10.919 17.0145 10.9073C17.0154 10.8994 17.0166 10.8914 17.0174 10.8834C17.0187 10.8705 17.0195 10.8573 17.0204 10.8442C17.0209 10.8374 17.0216 10.8306 17.0219 10.8237C17.0229 10.8037 17.0234 10.7836 17.0234 10.7633V10.3291V9.82776C17.1269 9.44421 17.1793 9.04687 17.1793 8.64585C17.1792 6.58671 15.7949 4.78644 13.7975 4.22598ZM10.0266 3.09934C10.051 3.09746 10.0746 3.09301 10.0971 3.08629C10.1326 3.08645 10.1679 3.08707 10.2031 3.08813C10.21 3.08832 10.2169 3.08832 10.2238 3.08813C10.259 3.08707 10.2943 3.08641 10.3298 3.08629C10.3524 3.09301 10.376 3.09746 10.4003 3.09934C11.5696 3.19133 12.6331 3.78453 13.3182 4.7268C13.3652 4.79144 13.4333 4.83762 13.5109 4.85719C15.2682 5.30156 16.4955 6.85953 16.4955 8.64585C16.4955 9.00046 16.4474 9.35144 16.3524 9.68905C16.3439 9.71917 16.3396 9.75034 16.3396 9.78163V10.7633C16.3396 11.0458 16.1096 11.2755 15.8268 11.2755H12.9912C12.8024 11.2755 12.6494 11.4286 12.6494 11.6174V13.112C12.6494 13.2767 12.5151 13.4107 12.3502 13.4107C12.1853 13.4107 12.0511 13.2767 12.0511 13.112V11.6174C12.0511 11.4286 11.898 11.2755 11.7092 11.2755H4.60003C4.31726 11.2755 4.08722 11.0458 4.08722 10.7633V9.78163C4.08722 9.75034 4.08293 9.71921 4.07445 9.68905C3.98961 9.38741 3.94246 9.07507 3.93328 8.75905C4.43515 9.1528 5.0696 9.3889 5.75925 9.3889C7.37987 9.3889 8.69835 8.08855 8.69835 6.49023C8.69835 5.56254 8.25366 4.73586 7.56409 4.20492C8.22448 3.56789 9.09135 3.17289 10.0266 3.09934ZM5.75925 4.27531C7.00284 4.27531 8.0146 5.2689 8.0146 6.49027C8.0146 7.71159 7.00284 8.70519 5.75925 8.70519C4.51574 8.70515 3.50406 7.71156 3.50406 6.49023C3.50406 5.2689 4.51578 4.27531 5.75925 4.27531ZM13.5751 19.8162H6.58132L4.96175 11.9593H11.3673V13.112C11.3673 13.6537 11.8082 14.0944 12.3502 14.0944C12.8922 14.0944 13.3331 13.6537 13.3331 13.112V11.9593H15.1948L13.5751 19.8162Z" fill="#57263C"/>
+              </g>
+              <defs>
+              <clipPath id="clip0_36_135">
+              <rect width="20" height="20" fill="white" transform="translate(0 0.5)"/>
+              </clipPath>
+              </defs>
+              </svg>
+            <span  class="text-center text-white font-bold text-sm md:text-base"
+              >Servicios</span
+            >
+          </a>      
         </nav>
         <div class="flex flex-col items-center mb-5">
           <h1 class="flex flex-row items-center gap-1">
-            <svg
-              class="block"
+            <svg              
+              
               xmlns="http://www.w3.org/2000/svg"
               width="15"
               height="15"
@@ -65,7 +105,7 @@
                 d="M7.171.785C6.88.372 6.391.14 5.96.4c-.386.231-.696.439-.887.623-.178.171-.256.313-.266.442-.01.13.04.275.224.477a.118.118 0 0 0 .105.037 13.61 13.61 0 0 1 2.305-.137c1.05.021 2.048.142 2.915.337.106.024.19-.093.12-.177-.221-.263-.452-.43-1.15-.396l-.019.001h-.019c-1.214-.074-1.82-.404-2.116-.822Zm.136 1.566c-1.253-.005-2.342.15-3.09.396-.398.132-.697.292-.873.453-.175.16-.223.306-.191.443.069.295.463.32.756.241.849-.227 1.83-.402 2.898-.504 1.838-.175 3.587-.102 4.96.167.105.02.208.042.308.065.195.045.306-.122.14-.234-.254-.17-.631-.342-1.095-.492-.93-.298-2.201-.505-3.56-.532l-.253-.003Zm1.624 1.43a20.02 20.02 0 0 0-1.944.092c-1.775.169-3.298.55-4.303 1.016-.503.232-.875.487-1.086.73-.034.04-.064.078-.09.115-.14.206.089.378.33.315C3.308 5.666 5.3 5.437 7.5 5.437c2.2 0 4.19.23 5.663.612.089.024.185.008.258-.048.112-.086.205-.172.279-.257.211-.244.261-.46.19-.658-.073-.197-.273-.39-.642-.578-.37-.188-.896-.356-1.529-.48-.791-.156-1.749-.244-2.788-.246ZM7.5 5.894c-2.13 0-4.056.227-5.42.582-.683.177-1.223.388-1.574.604-.352.216-.506.423-.506.624 0 .202.154.41.506.625a.018.018 0 0 0 .016.001l1.373-.58a2 2 0 0 1 1.565.004l.823.352a2 2 0 0 0 1.557.007l.877-.366a2 2 0 0 1 1.567.011l.792.344a2 2 0 0 0 1.558.015l.919-.379a2 2 0 0 1 1.54.007l1.385.585a.018.018 0 0 0 .016 0c.352-.217.506-.424.506-.626 0-.201-.154-.408-.506-.624-.351-.216-.891-.427-1.573-.604-1.365-.355-3.292-.582-5.421-.582Zm5.418 2.347a1.554 1.554 0 0 0-1.197-.005l-.476.196a2 2 0 0 0-1.217 1.557l-.378 2.558a.3.3 0 0 1-.595-.088l.314-2.119a1.916 1.916 0 0 0-1.135-2.03 1.877 1.877 0 0 0-2.608 1.995l.319 2.154a.3.3 0 0 1-.595.088l-.375-2.537a2 2 0 0 0-1.191-1.546l-.504-.216a1.543 1.543 0 0 0-2.025 2.029l1.113 2.588a2 2 0 0 0 1.837 1.21h6.59a2 2 0 0 0 1.837-1.21l1.109-2.578a1.554 1.554 0 0 0-.823-2.046Z"
               />
             </svg>
-            <span class="text-white text-4xl font-bold">Modeka</span>
+            <span class="text-white text-6xl lg:text-9xl font-bold">Modeka</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="15"
@@ -78,14 +118,14 @@
               />
             </svg>
           </h1>
-          <span class="text-xl font-bold text-pink-950 text-"
+          <span class="text-xl lg:text-3xl font-bold text-pink-950 text-"
             >Pasteleria y reposteria</span
           >
         </div>
       </div>
-    </div>
+    </section>
     <svg
-      class="-mt-2"
+      class="-mt-2 lg:-mt-11"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1440 320"
     >
@@ -95,31 +135,46 @@
         d="M0,96L120,133.3C240,171,480,245,720,240C960,235,1200,149,1320,106.7L1440,64L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"
       ></path>
     </svg>
-    <div class="w-full pt-5 bg-white">
-      <h3 class="mr-5 text-3xl text-right text-rose-950 font-bold my-3">
-        ¿Quienes somos?
-      </h3>
-      <p class="my-8 w-11/12 text-rose-950 text-base font-semibold text-right">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam
-        debitis rem voluptas harum ullam iure qui natus, magnam perspiciatis
-        dolorum velit totam saepe modi quam, beatae non, nihil sunt.
-      </p>
+    <section class="w-full">
+      <img class="w-14 absolute left-2 lg:left-10" src="../assets/images/cake-4.png" alt="">
+    <div class="lg:flex lg:justify-between h-96">
+      <div class="lg:w-2/4 flex justify-center items-center">
+      <div class="hidden lg:block w-72 h-96 max-w-xl relative rounded-xl -rotate-12 bg-rose-400 ">
+        <div class="w-full h-full absolute overflow-hidden rotate-12 rounded-xl bg-white">
+          <img class="w-full" src="../assets/images/profilex2.png" alt="profile" srcset="">
+        </div>
+      </div>
     </div>
+      <div class="w-full lg:w-2/4 flex flex-col items-end pr-7 pt-5 bg-white">        
+        <h3 id="info" class="text-3xl lg:text-4xl text-right text-rose-950 font-bold mb-3 mt-10">
+          ¿Quienes somos?
+        </h3>
+        <p class="mb-4 mt-2 w-full md:w-2/3 lg:w-full lg:max-w-4xl text-rose-950 text-base lg:text-2xl font-semibold text-right">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque numquam
+          debitis rem voluptas harum ullam iure qui natus, magnam perspiciatis
+          dolorum velit totam saepe modi quam, beatae non, nihil sunt.
+        </p>
+      </div>
+    </div>
+    <img class="w-16 absolute right-3 lg:right-10" src="../assets/images/cake-3.png" alt="">
+
     <img
-      class="w-3/6 max-w-5xl"
+      class="w-3/6 max-w-5xl lg:hidden"
       src="../assets/images/profilex2.png"
       alt="profile"
     />
-
+  </section>
+  <svg class="hidden lg:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(103 232 249)" fill-opacity="1" d="M0,256L14.1,256C28.2,256,56,256,85,229.3C112.9,203,141,149,169,133.3C197.6,117,226,139,254,165.3C282.4,192,311,224,339,229.3C367.1,235,395,213,424,181.3C451.8,149,480,107,508,80C536.5,53,565,43,593,80C621.2,117,649,203,678,234.7C705.9,267,734,245,762,229.3C790.6,213,819,203,847,192C875.3,181,904,171,932,186.7C960,203,988,245,1016,240C1044.7,235,1073,181,1101,149.3C1129.4,117,1158,107,1186,101.3C1214.1,96,1242,96,1271,133.3C1298.8,171,1327,245,1355,234.7C1383.5,224,1412,128,1426,80L1440,32L1440,320L1425.9,320C1411.8,320,1384,320,1355,320C1327.1,320,1299,320,1271,320C1242.4,320,1214,320,1186,320C1157.6,320,1129,320,1101,320C1072.9,320,1045,320,1016,320C988.2,320,960,320,932,320C903.5,320,875,320,847,320C818.8,320,791,320,762,320C734.1,320,706,320,678,320C649.4,320,621,320,593,320C564.7,320,536,320,508,320C480,320,452,320,424,320C395.3,320,367,320,339,320C310.6,320,282,320,254,320C225.9,320,198,320,169,320C141.2,320,113,320,85,320C56.5,320,28,320,14,320L0,320Z"></path></svg>
     <!-- Sección de productos -->
-    <div class="w-full pt-5 bg-cyan-300">
-      <h3 class="text-3xl text-center text-rose-950 font-bold my-3">
+    <div id="products" class="w-full pt-5 bg-cyan-300">
+      <h3 class="text-3xl lg:text-4xl text-center text-rose-950 font-bold my-3">
         Nuestros productos
       </h3>
-      <div class="flex flex-col items-center pt-5">
+      <img class="w-14 absolute left-2 lg:left-10" src="../assets/images/cake-4.png" alt="">
+      <div class="flex flex-col flex-wrap justify-center  items-center pt-5 md:flex-row md:justify-around">
         <!-- Item cakes -->
         <div
-          class="grid grid-rows-4 w-60 h-60 mt-16 rounded-full bg-gradient-to-tr from-rose-950 from-55% via-transparent"
+          class="grid grid-rows-4 w-60 md:w-64  lg:w-72 xl:w-80 h-60 md:h-64  lg:h-72 xl:h-80 hover:-60 md:hover:-64 lg:hover:-72 mt-16 rounded-full bg-gradient-to-tr from-rose-950 from-55% via-transparent"
         >
           <img
             class="row-start-1 ml-10 -mt-16"
@@ -128,15 +183,15 @@
             srcset=""
           />
           <div class="flex flex-col row-start-3 row-span-2 items-center">
-            <h4 class="w-2/4 text-center text-cyan-300 font-bold text-lg">
+            <h4 class="w-3/4 text-center text-cyan-300 font-bold text-lg lg:text-2xl">
               other
             </h4>
-            <p class="text-cyan-300 w-5/6 text-center">otro texto</p>
+            <p class="text-cyan-300 w-5/6 text-center lg:text-base">otro texto para el producto!</p>
           </div>
         </div>
 
         <div
-          class="grid grid-rows-4 w-60 h-60 mt-16 rounded-full bg-gradient-to-tr from-rose-400 from-55% via-transparent"
+          class="grid grid-rows-4 w-60 md:w-64  lg:w-72 xl:w-80 h-60 md:h-64  lg:h-72 xl:h-80 mt-16 rounded-full bg-gradient-to-tr from-rose-400 from-55% via-transparent"
         >
           <img
             class="row-start-1 ml-10 -mt-16"
@@ -145,13 +200,14 @@
             srcset=""
           />
           <div class="flex flex-col row-start-3 row-span-2 items-center">
-            <h4 class="w-2/4 text-center text-rose-950 font-bold text-lg">
-              other
+            <h4 class="w-3/4 text-center text-rose-950 font-bold text-lg lg:text-2xl">
+              other product
             </h4>
-            <p class="text-rose-950 w-5/6 text-center">otro texto</p>
+            <p class="text-rose-950 w-5/6 text-center text-base">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
       </div>
+      <img class="w-16 absolute right-3 lg:right-10" src="../assets/images/cake-3.png" alt="">
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path
@@ -160,15 +216,17 @@
         d="M0,256L20,266.7C40,277,80,299,120,282.7C160,267,200,213,240,170.7C280,128,320,96,360,101.3C400,107,440,149,480,144C520,139,560,85,600,80C640,75,680,117,720,165.3C760,213,800,267,840,250.7C880,235,920,149,960,96C1000,43,1040,21,1080,58.7C1120,96,1160,192,1200,234.7C1240,277,1280,267,1320,224C1360,181,1400,107,1420,69.3L1440,32L1440,0L1420,0C1400,0,1360,0,1320,0C1280,0,1240,0,1200,0C1160,0,1120,0,1080,0C1040,0,1000,0,960,0C920,0,880,0,840,0C800,0,760,0,720,0C680,0,640,0,600,0C560,0,520,0,480,0C440,0,400,0,360,0C320,0,280,0,240,0C200,0,160,0,120,0C80,0,40,0,20,0L0,0Z"
       ></path>
     </svg>
-    <div class="w-full pt-5 bg-white mb-10">
-      <h3 class="ml-5 text-3xl text-rose-950 font-bold mt-3 mb-11 text-left">
+    <div id="services" class="w-full pt-5 bg-white mb-10">
+      <h3  class="ml-5 text-3xl lg:text-4xl text-rose-950 font-bold mt-3 mb-16 text-left">
         Otros servicios
       </h3>
-      <div class="flex flex-col items-center gap-14">
+      
+      <div class="flex flex-col h-auto flex-wrap items-center  gap-14 md:flex-row md:justify-center ">
         <!-- item -->
-        <div class="w-72 h-52 relative bg-cyan-300 rotate-12 rounded-lg">
-          <div class="w-72 h-52 absolute -rotate-12 rounded-lg overflow-hidden">
-            <div class="relative w-full h-full">
+        
+        <div class="w-72 h-52 lg:h-72 xl:h-80 lg:w-1/4 lg:max-w-2xl relative bg-cyan-300 rotate-12 rounded-lg">
+          <div class="w-full h-full   absolute -rotate-12 rounded-lg overflow-hidden">
+            <div class="relative w-full h-full ">
               <img
                 src="../assets/images/service-1.jpg"
                 alt="Servicio1"
@@ -178,19 +236,19 @@
                 class="h-full w-full flex flex-col justify-end relative bg-gradient-to-t from-rose-950 from-30% via-transparent"
               >
                 <div class="flex flex-col items-center pb-5">
-                  <h4 class="w-2/4 text-center text-white font-bold text-lg">
+                  <h4 class="w-2/4 text-center  text-white font-bold text-lg lg:text-2xl">
                     other
                   </h4>
-                  <p class="text-white w-5/6 text-center">otro texto</p>
+                  <p class="text-white w-5/6 text-center lg:text-base">otro texto</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
+      
         <!-- item -->
-        <div class="w-72 h-52 relative bg-cyan-300 rotate-12 rounded-lg">
-          <div class="w-72 h-52 absolute -rotate-12 rounded-lg overflow-hidden">
+        <div class="w-72 h-52 lg:h-72 xl:h-80 lg:w-1/4 lg:max-w-2xl relative bg-cyan-300 rotate-12 rounded-lg">
+          <div class="w-full h-full absolute -rotate-12 rounded-lg overflow-hidden">
             <div class="relative w-full h-full">
               <img
                 src="../assets/images/service-1.jpg"
@@ -201,10 +259,31 @@
                 class="h-full w-full flex flex-col justify-end relative bg-gradient-to-t from-rose-950 from-30% via-transparent"
               >
                 <div class="flex flex-col items-center pb-5">
-                  <h4 class="w-2/4 text-center text-white font-bold text-lg">
+                  <h4 class="w-2/4 text-center text-white font-bold text-lg lg:text-2xl">
                     other
                   </h4>
-                  <p class="text-white w-5/6 text-center">otro texto</p>
+                  <p class="text-white w-5/6 text-center lg:text-base">otro texto</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-72 h-52 lg:h-72 xl:h-80 lg:w-1/4 lg:max-w-2xl relative bg-cyan-300 rotate-12 rounded-lg">
+          <div class="w-full h-full absolute -rotate-12 rounded-lg overflow-hidden">
+            <div class="relative w-full h-full">
+              <img
+                src="../assets/images/service-1.jpg"
+                alt="Servicio1"
+                class="absolute bg-cover bg-no-repeat min-h-full"
+              />
+              <div
+                class="h-full w-full flex flex-col justify-end relative bg-gradient-to-t from-rose-950 from-30% via-transparent"
+              >
+                <div class="flex flex-col items-center pb-5">
+                  <h4 class="w-2/4 text-center text-white font-bold text-lg lg:text-2xl">
+                    other
+                  </h4>
+                  <p class="text-white w-5/6 text-center lg:text-base">otro texto</p>
                 </div>
               </div>
             </div>
@@ -229,13 +308,13 @@
       <g fill="url(#ssspill-grad)">
         <rect width="100%" height="40" fill="#ffff"></rect>
 
-        <rect x="0" width="7.69%" height="66.96482373852656" rx="15"></rect>
-        <rect x="50" width="7.69%" height="67.1070486730636" rx="15"></rect>
-        <rect x="100" width="7.69%" height="92.51245895292632" rx="15"></rect>
-        <rect x="150" width="7.69%" height="97.40123834795658" rx="15"></rect>
-        <rect x="200" width="7.69%" height="81.70268215209515" rx="15"></rect>
+        <rect x="0" width="7.69%" height="56.96482373852656" rx="15"></rect>
+        <rect x="50" width="7.69%" height="57.1070486730636" rx="15"></rect>
+        <rect x="100" width="7.69%" height="72.51245895292632" rx="15"></rect>
+        <rect x="150" width="7.69%" height="77.40123834795658" rx="15"></rect>
+        <rect x="200" width="7.69%" height="61.70268215209515" rx="15"></rect>
         <rect x="250" width="7.69%" height="58.62036685187448" rx="15"></rect>
-        <rect x="300" width="7.69%" height="85.76790873595476" rx="15"></rect>
+        <rect x="300" width="7.69%" height="65.76790873595476" rx="15"></rect>
       </g>
       <g fill="#fb7185">
         <rect
@@ -282,18 +361,21 @@
         ></rect>
       </g>
     </svg>
-    <div class="w-full py-5 bg-rose-400  pb-5">
-      <h3 class="ml-5 text-3xl text-rose-950 font-bold mt-3 mb-11 text-left">
+    <div id="contact" class="w-full py-5 bg-rose-400  pb-5">
+      <img class="w-16 -mt-10 absolute right-3 lg:right-10" src="../assets/images/cake-3.png" alt="">
+      <h3 class="ml-5 text-3xl lg:text-4xl text-center text-rose-950 font-bold mt-3 mb-11 text-left">
         Contactanos
       </h3>
+      <div class="flex lg:justify-evenly">
       <form
         action=""
-        class="w-11/12 m-auto bg-cyan-300 px-3 pb-5 pt-2 rounded-xl "
+        style="max-height: 500px;"
+        class="w-11/12  lg:w-2/6 lg:max-w-3xl m-auto drop-shadow-2xl lg:m-0 bg-cyan-300 px-3 pb-5 pt-2 rounded-xl "
       >
         <div class="flex flex-col m-auto items-center w-10/12 my-4">
           <label
             for="name"
-            class="block w-full text-left text-base font-semibold text-rose-950"
+            class="block w-full text-left text-base  font-semibold text-rose-950"
             >Nombre</label
           >
           <input
@@ -304,7 +386,7 @@
         <div class="flex flex-col m-auto items-center w-10/12 my-4">
           <label
             for="name"
-            class="block w-full text-left text-base font-semibold text-rose-950"
+            class="block w-full text-left text-base mb-3 font-semibold text-rose-950"
             >Correo electronico</label
           >
           <input
@@ -316,7 +398,7 @@
         <div class="flex flex-col m-auto items-center w-10/12 my-4">
           <label
             for="name"
-            class="block w-full text-left text-base font-semibold text-rose-950"
+            class="block w-full text-left text-base mb-3 font-semibold text-rose-950"
             >Curso interesado</label
           >
           <select
@@ -329,7 +411,7 @@
         <div class="flex flex-col m-auto items-center w-10/12 my-4">
           <label
             for="name"
-            class="block w-full text-left text-base font-semibold text-rose-950"
+            class="block w-full text-left text-base mb-3 font-semibold text-rose-950"
             >Comentarios</label
           >
           <textarea
@@ -343,28 +425,72 @@
         </div>
         <div class="w-full flex justify center">
 
-          <button class=" rounded-2xl bg-rose-950 text-cyan-300 text-xl py-2 px-5 m-auto"> Submit </button>
+          <a  class=" block rounded-2xl hover:border-2 hover:border-rose-950 hover:bg-cyan-300 hover:text-rose-950 bg-rose-950 text-cyan-300 text-xl py-2 px-5 m-auto ease-in duration-300"> Enviar </a>
         </div>
       </form>
+      <div class="hidden lg:flex lg:w-2/5  items-end justify-end ">
+        <img class="w-3/4  max-w-2xl" class="w-full" src="../assets/images/contactPicture.png" alt="contact">
+      </div>
     </div>
+    </div>
+    <img class="w-14 absolute left-2 lg:left-10" src="../assets/images/cake-4.png" alt="">
     <div class="w-full  bg-rose-950  pb-8">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#fb7185" fill-opacity="1" d="M0,224L120,186.7C240,149,480,75,720,85.3C960,96,1200,192,1320,240L1440,288L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
       </svg>
-      <div class="flex flex-col items-center text-rose-300 ">
-        <h4 class="text-base  font-bold">Nos puedes encontrar en</h4>
-        <span class="block text-center text-sm font-medium text">Email: <span class="font-light">lorem@sdfs.com</span></span>
-        <span class="block text-center text-sm font-medium text">Telefono: <span class="font-light">318823222</span></span>
-        <span class="block text-center text-sm font-medium text">Calle 123 # 23 - 23 Bogotá - Colombia</span>
+      <div class="flex flex-col lg:flex-row items-center lg:justify-evenly lg:items-start text-rose-300 ">
+        <section class="flex flex-col items-center lg:items-start">
+        <h4 class="inline-block text-base  font-bold">Nos puedes encontrar en</h4>
+        <span class="inline-block  text-sm font-medium text">Email: <span class="font-light">lorem@sdfs.com</span></span>
+        <span class="inline-block  text-sm font-medium text">Telefono: <span class="font-light">318823222</span></span>
+        <span class="inline-block  text-sm font-medium text">Calle 123 # 23 - 23 Bogotá - Colombia</span>
+        </section>
+        <section class="flex flex-col items-center lg:items-center lg:justify-start">
         <h4 class="text-base  font-bold">Nuestras redes</h4>
-        <div class="flex text-rose-400">
+        <div class="flex justify-center my-1 gap-1 text-rose-400">
           <svg class="mx-1 fill-current"  xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
           <svg class="mx-1 fill-current" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
           <svg class="mx-1 fill-current" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
         </div>
-        <h4 class="text-sm mt-5 text-white  font-semibold">Diseñado por NaroTech</h4>
-      </div>
+      </section>
+      <section class="hidden lg:block">
+        <div class="flex flex-col items-center mb-5">
+          <h1 class="flex flex-row items-center gap-1">
+            <svg
+              class="block fill-current text-rose-400"
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              fill="none"
+            >
+              <path
+                fill="#fff"
+                d="M7.171.785C6.88.372 6.391.14 5.96.4c-.386.231-.696.439-.887.623-.178.171-.256.313-.266.442-.01.13.04.275.224.477a.118.118 0 0 0 .105.037 13.61 13.61 0 0 1 2.305-.137c1.05.021 2.048.142 2.915.337.106.024.19-.093.12-.177-.221-.263-.452-.43-1.15-.396l-.019.001h-.019c-1.214-.074-1.82-.404-2.116-.822Zm.136 1.566c-1.253-.005-2.342.15-3.09.396-.398.132-.697.292-.873.453-.175.16-.223.306-.191.443.069.295.463.32.756.241.849-.227 1.83-.402 2.898-.504 1.838-.175 3.587-.102 4.96.167.105.02.208.042.308.065.195.045.306-.122.14-.234-.254-.17-.631-.342-1.095-.492-.93-.298-2.201-.505-3.56-.532l-.253-.003Zm1.624 1.43a20.02 20.02 0 0 0-1.944.092c-1.775.169-3.298.55-4.303 1.016-.503.232-.875.487-1.086.73-.034.04-.064.078-.09.115-.14.206.089.378.33.315C3.308 5.666 5.3 5.437 7.5 5.437c2.2 0 4.19.23 5.663.612.089.024.185.008.258-.048.112-.086.205-.172.279-.257.211-.244.261-.46.19-.658-.073-.197-.273-.39-.642-.578-.37-.188-.896-.356-1.529-.48-.791-.156-1.749-.244-2.788-.246ZM7.5 5.894c-2.13 0-4.056.227-5.42.582-.683.177-1.223.388-1.574.604-.352.216-.506.423-.506.624 0 .202.154.41.506.625a.018.018 0 0 0 .016.001l1.373-.58a2 2 0 0 1 1.565.004l.823.352a2 2 0 0 0 1.557.007l.877-.366a2 2 0 0 1 1.567.011l.792.344a2 2 0 0 0 1.558.015l.919-.379a2 2 0 0 1 1.54.007l1.385.585a.018.018 0 0 0 .016 0c.352-.217.506-.424.506-.626 0-.201-.154-.408-.506-.624-.351-.216-.891-.427-1.573-.604-1.365-.355-3.292-.582-5.421-.582Zm5.418 2.347a1.554 1.554 0 0 0-1.197-.005l-.476.196a2 2 0 0 0-1.217 1.557l-.378 2.558a.3.3 0 0 1-.595-.088l.314-2.119a1.916 1.916 0 0 0-1.135-2.03 1.877 1.877 0 0 0-2.608 1.995l.319 2.154a.3.3 0 0 1-.595.088l-.375-2.537a2 2 0 0 0-1.191-1.546l-.504-.216a1.543 1.543 0 0 0-2.025 2.029l1.113 2.588a2 2 0 0 0 1.837 1.21h6.59a2 2 0 0 0 1.837-1.21l1.109-2.578a1.554 1.554 0 0 0-.823-2.046Z"
+              />
+            </svg>
+            <span class="text-white text-3xl lg:text-3xl font-bold">Modeka</span>
+            <svg
+            
+              xmlns="http://www.w3.org/2000/svg"
+              width="15"
+              height="15"
+              fill="none"
+            >
+              <path
+                fill="#fff"
+                d="M7.171.785C6.88.372 6.391.14 5.96.4c-.386.231-.696.439-.887.623-.178.171-.256.313-.266.442-.01.13.04.275.224.477a.118.118 0 0 0 .105.037 13.61 13.61 0 0 1 2.305-.137c1.05.021 2.048.142 2.915.337.106.024.19-.093.12-.177-.221-.263-.452-.43-1.15-.396l-.019.001h-.019c-1.214-.074-1.82-.404-2.116-.822Zm.136 1.566c-1.253-.005-2.342.15-3.09.396-.398.132-.697.292-.873.453-.175.16-.223.306-.191.443.069.295.463.32.756.241.849-.227 1.83-.402 2.898-.504 1.838-.175 3.587-.102 4.96.167.105.02.208.042.308.065.195.045.306-.122.14-.234-.254-.17-.631-.342-1.095-.492-.93-.298-2.201-.505-3.56-.532l-.253-.003Zm1.624 1.43a20.02 20.02 0 0 0-1.944.092c-1.775.169-3.298.55-4.303 1.016-.503.232-.875.487-1.086.73-.034.04-.064.078-.09.115-.14.206.089.378.33.315C3.308 5.666 5.3 5.437 7.5 5.437c2.2 0 4.19.23 5.663.612.089.024.185.008.258-.048.112-.086.205-.172.279-.257.211-.244.261-.46.19-.658-.073-.197-.273-.39-.642-.578-.37-.188-.896-.356-1.529-.48-.791-.156-1.749-.244-2.788-.246ZM7.5 5.894c-2.13 0-4.056.227-5.42.582-.683.177-1.223.388-1.574.604-.352.216-.506.423-.506.624 0 .202.154.41.506.625a.018.018 0 0 0 .016.001l1.373-.58a2 2 0 0 1 1.565.004l.823.352a2 2 0 0 0 1.557.007l.877-.366a2 2 0 0 1 1.567.011l.792.344a2 2 0 0 0 1.558.015l.919-.379a2 2 0 0 1 1.54.007l1.385.585a.018.018 0 0 0 .016 0c.352-.217.506-.424.506-.626 0-.201-.154-.408-.506-.624-.351-.216-.891-.427-1.573-.604-1.365-.355-3.292-.582-5.421-.582Zm5.418 2.347a1.554 1.554 0 0 0-1.197-.005l-.476.196a2 2 0 0 0-1.217 1.557l-.378 2.558a.3.3 0 0 1-.595-.088l.314-2.119a1.916 1.916 0 0 0-1.135-2.03 1.877 1.877 0 0 0-2.608 1.995l.319 2.154a.3.3 0 0 1-.595.088l-.375-2.537a2 2 0 0 0-1.191-1.546l-.504-.216a1.543 1.543 0 0 0-2.025 2.029l1.113 2.588a2 2 0 0 0 1.837 1.21h6.59a2 2 0 0 0 1.837-1.21l1.109-2.578a1.554 1.554 0 0 0-.823-2.046Z"
+              />
+            </svg>
+          </h1>
+          <span class="text-xl lg:text-lg font-bold text-rose-400 text-center"
+            >Pasteleria y reposteria</span
+          >
+        </div>
+
 
     </div>
+  
+  <h4 class=" w-full text-sm mt-10 text-white text-center font-semibold">Diseñado por NaroTech</h4>
+
   </body>
 </html>
